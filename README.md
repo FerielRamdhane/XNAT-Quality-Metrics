@@ -1,5 +1,5 @@
 ## What is this repository for?
-This repository is about the Image processing containers developped at the Eurobioimaging MED-Hub for the XNAT platform hosted by University of Turin (https://eubi-xnat.hpc4ai.unito.it): 
+This repository is sharing docker images developped at the Eurobioimaging MED-Hub for the XNAT platform hosted by University of Turin (https://eubi-xnat.hpc4ai.unito.it): 
 ### 1. quality_metrics/snr_si_metrics v1.0.1 and quality_metrics/snr_si_metrics_subj v1.0.1
 Docker images to check the quality of DICOM images at the scan and Subject level on XNAT platform,respectively, by calculating: 
 - Signal to Noise Ratio (SNR) 
