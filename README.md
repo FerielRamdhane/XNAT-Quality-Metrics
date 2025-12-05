@@ -70,7 +70,7 @@ docker run -v /data/xnat/scans:/input -v /data/xnat/results:/output iqaxnat_scan
 [3] McLaughlin PW, Narayana V, Kessler M, McShan D, Troyer S, Marsh L, Hixson G, Roberson PL. The use of mutual information in registration of CT and MRI datasets post permanent implant. Brachytherapy. 2004;3(2):61-70. doi: 10.1016/j.brachy.2004.06.001. PMID: 15374537. 
 
 ## License
-This repository is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license. You may use and share the content non-commercially, with proper attribution, but you may not modify or create derivative works.(LICENSE) 
+This repository is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](LICENSE). You may use and share the content non-commercially, with proper attribution, but you may not modify or create derivative works.(LICENSE) 
 
 
 
