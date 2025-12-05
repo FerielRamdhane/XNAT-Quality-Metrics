@@ -1,4 +1,4 @@
-# Quality Metric Tool - User Guide
+# Image Quality Assessment metrics (IQA) - User Guide
 ## Tool Overview
 This repository is sharing docker images developped at the [Euro-BioImaging (MED-Hub)](https://www.eurobioimaging.eu/) and The Institute of Biostructures and Bioimaging of the National Research Council ([IBB-CNR](https://www.ibb.cnr.it/)) for the [XNAT platform](https://eubi-xnat.hpc4ai.unito.it) hosted by [University of Turin](https://www.unito.it/).
 
