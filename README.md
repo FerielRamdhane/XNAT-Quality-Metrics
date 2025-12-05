@@ -8,10 +8,18 @@ It supports **scan-level** and **subject-level** analysis using the following me
 - Mutual Information (MI) index calculates the mutual dependency in the images with higher index corresponding to higher similarity between two consecutive acquisitions.This tool is more dedicated to the sequential acquisition data such as the DCE images.
 - Rician Noise Level estimation: is based on the Mean Absolute Deviation to estimate the Rician noise in MRI.
 
+
+Output: The tool generates both Excel files and PNG histogram plots for each metric:
+1. Excel Files (.xlsx): Contains the mean, median and stds for each metric and scan/subject.
+2. PNG Files (.png) Histogram plots corresponding to each metric.
+
 ## User Manual
 
-### Steps to Deploy on XNAT Instance
+### Using the Docker image
 
+To build and run the container:
+
+From the root of this repository
 1. Pull the appropriate Docker image:
 ```bash
 # For scan-level analysis
@@ -20,6 +28,16 @@ docker pull iqaxnat_scan:latest
 # For subject-level analysis
 docker pull iqaxnat_subject:latest
 
----
-Licence
+```
+2. Verify the Docker image:
+```docker images ```
+
+2. Running Locally
+* Ensure Docker is installed on your local machine.
+* Pull the appropriate Docker image as above.
+* Prepare input and output directories on your local system.
+  
+4. Run with input and output volumes mounted
+```
+
 
