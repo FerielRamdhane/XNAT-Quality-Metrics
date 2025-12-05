@@ -1,4 +1,4 @@
-# Quality Metric Tool - XNAT User Guide
+# Quality Metric Tool - User Guide
 ## Tool Overview
 This repository is sharing docker images developped at the Euro-BioImaging MED-Hub  and National Research Council (CNR) for the XNAT platform hosted by University of Turin. (https://eubi-xnat.hpc4ai.unito.it): A suite of four Image Quality Assessment (IQA) metrics designed to evaluate the perceptual quality of preclinical and medical image datasets within the XNAT platform. It **can also be run locally** for testing or development.  
 It supports **scan-level** and **subject-level** analysis using the following metrics:
@@ -18,11 +18,12 @@ Output: The tool generates both Excel files and PNG histogram plots for each met
 1. Excel Files (.xlsx): Contains the mean, median and stds for each metric and scan/subject.
 2. PNG Files (.png) Histogram plots corresponding to each metric.
 
-## User Manual
 ### Requirements
 The Quality Metric Tool is Docker-based and can run on any system that supports Docker (Linux, macOS, Windows). 
 The Quality Metric Tool is **Docker-based** and can run on **any system that supports Docker** (Linux, macOS, Windows). No additional software is needed beyond Docker (Install from [Docker Official Site](https://www.docker.com/get-started))
-### Using the Docker image
+
+## User Manual 
+### Using the Docker images locally
 To build and run the container from the root of this repository
 1. Pull the appropriate Docker image:
 ```bash
@@ -61,6 +62,15 @@ docker run -v /data/xnat/scans:/input -v /data/xnat/results:/output iqaxnat_scan
 ```
 docker run -v /data/xnat/scans:/input -v /data/xnat/results:/output iqaxnat_scan:latest snrsi mi riciannoiselevel
  ```
+### Pull the Docker Images in XNAT
+The Quality Metric Tool is designed to run seamlessly inside an XNAT environment through the **XNAT Container Service**.  
+Below are the steps required to deploy and run the tool within your XNAT instance.
+Log into your XNAT server (or the machine hosting XNAT Container Service) and pull the correct image.
+Check this **Getting started** for more details https://wiki.xnat.org/container-service/getting-started 
+
+#### Running the Tool in XNAT
+For detailed instructions on how to run Docker-based tools inside XNAT (using already pulled images), please refer to the following guide:
+👉 Click here for the XNAT Usage Guide 
 
 ### References
 [1] Erteza A. Sharpness index and its application to focus control. Appl Opt. 1976 Apr 1;15(4):877-81. doi: 10.1364/AO.15.000877. PMID: 20165091.
