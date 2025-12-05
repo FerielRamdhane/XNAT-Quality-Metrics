@@ -60,4 +60,21 @@ docker run -v /data/xnat/scans:/input -v /data/xnat/results:/output iqaxnat_scan
 ```
 docker run -v /data/xnat/scans:/input -v /data/xnat/results:/output iqaxnat_scan:latest snrsi mi riciannoiselevel
  ```
+### Requirements
+The Quality Metric Tool is Docker-based and can run on any system that supports Docker (Linux, macOS, Windows). 
+The Quality Metric Tool is **Docker-based** and can run on **any system that supports Docker** (Linux, macOS, Windows). No additional software is needed beyond Docker (Install from [Docker Official Site](https://www.docker.com/get-started))
 
+### References
+[1] F. Romdhane, D. Villano, P. Irrera, L. Consolino, D. L. Longo, "Improving contrast quantification of MRI-CEST images by applying a denoising approach based on a new combination between non-local means filter and anisotropic diffusion tensor," in the 14th European Molecular Imaging Meeting (EMIM), Glasgow, UK, March 2019.
+
+[2] K. Dabov, A. Foi, V. Katkovnik, and K. Egiazarian, "Image denoising by sparse 3D transform-domain collaborative filtering," IEEE Trans. Image Process., vol. 16, no. 8, August 2007.
+
+[3] DL.Longo, W. Dastru W, G. Digilio, J. Keupp, S. Langereis, S. Lanzardo, S. Prestigio, O. Steinbach, E.Terreno, F. Uggeri, S. Aime, "Iopamidol as a responsive MRI-chemical exchange saturation transfer contrast agent for pH mapping of kidneys: In vivo studies in mice at 7 T," Magn Reson Med 2011;65(1):202-211.s
+
+Citation
+Cite the code: DOI
+
+Cite the paper: https://doi.org/10.1002/mrm.28676
+
+Who do I talk to?
+If you have any comment, suggestion, or question, please do contact Feriel Romdhane at ferielromdhane@yahoo.fr
