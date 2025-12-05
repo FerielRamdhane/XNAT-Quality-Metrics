@@ -22,9 +22,7 @@ Output: The tool generates both Excel files and PNG histogram plots for each met
 
 ### Using the Docker image
 
-To build and run the container:
-
-From the root of this repository
+To build and run the container from the root of this repository
 1. Pull the appropriate Docker image:
 ```bash
 # For scan-level analysis
