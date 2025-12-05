@@ -1,6 +1,6 @@
 # Quality Metric Tool - User Guide
 ## Tool Overview
-This repository is sharing docker images developped at the Euro-BioImaging MED-Hub  and National Research Council (CNR) for the XNAT platform hosted by University of Turin. (https://eubi-xnat.hpc4ai.unito.it): A suite of four Image Quality Assessment (IQA) metrics designed to evaluate the perceptual quality of preclinical and medical image datasets within the XNAT platform. It **can also be run locally** for testing or development.  
+This repository is sharing docker images developped at the Euro-BioImaging MED-Hub  and National Research Council (CNR) for the XNAT platform hosted by [University of Turin](https://eubi-xnat.hpc4ai.unito.it): A suite of four Image Quality Assessment (IQA) metrics designed to evaluate the perceptual quality of preclinical and medical image datasets within the XNAT platform. It **can also be run locally** for testing or development.  
 It supports **scan-level** and **subject-level** analysis using the following metrics:
 
 - Signal to Noise Ratio (SNR) is used to characterise image quality with higher values indicating better image quality
@@ -70,7 +70,7 @@ Log into your XNAT server (or the machine hosting XNAT Container Service) and pu
 
 ### Running the Tool in XNAT
 For detailed instructions on how to run Docker-based tools inside XNAT (using already pulled images), please refer to the following guide:
-👉 Click here for the XNAT Usage Guide 
+👉 [The XNAT Usage Guide]
 
 ### References
 [1] Erteza A. Sharpness index and its application to focus control. Appl Opt. 1976 Apr 1;15(4):877-81. doi: 10.1364/AO.15.000877. PMID: 20165091.
