@@ -51,6 +51,13 @@ docker images
 | IMAGE_NAME     | Docker image (`iqaxnat_scan:latest` or `iqaxnat_subject:latest`) |
 | METRIC_NAME    | IQA metric(s), space-separated for multiple metrics              |
 
-
-
+4. Examples
+- Scan-Level Analysis
+ ```
+docker run -v /data/xnat/scans:/input -v /data/xnat/results:/output iqaxnat_scan:latest snrsi
+```
+- Multiple Metrics
+```
+docker run -v /data/xnat/scans:/input -v /data/xnat/results:/output iqaxnat_scan:latest snrsi mi riciannoiselevel
+ ```
 
