@@ -10,9 +10,9 @@ It supports **scan-level** and **subject-level** analysis using the following me
   
 | Metric Name       | Description |
 |------------------|-------------|
-| snrsi             | **Signal-to-Noise Ratio**: characterizes image quality (higher = better)<br>**Sharpness Index (SI)**: measures clarity/detail (higher = sharper) |
-| mi                | **Mutual Information (MI)**: measures dependency between images (higher = more similar)<br>Dedicated for sequential acquisition data such as DCE images |
-| riciannoiselevel  | **Rician Noise Level**: estimation based on the Mean Absolute Deviation to measure Rician noise in MRI |
+| snrsi             | **Signal-to-Noise Ratio**:characterizes image quality (higher = better)<br>**Sharpness Index (SI)**[1]: measures clarity/detail (higher = sharper) |
+| mi                | **Mutual Information (MI)**[2]: measures dependency between images (higher = more similar)<br>Dedicated for sequential acquisition data such as DCE images |
+| riciannoiselevel  | **Rician Noise Level**[3]: estimation based on the Mean Absolute Deviation to measure Rician noise in MRI |
 
 Output: The tool generates both Excel files and PNG histogram plots for each metric:
 1. Excel Files (.xlsx): Contains the mean, median and stds for each metric and scan/subject.
@@ -64,7 +64,9 @@ docker run -v /data/xnat/scans:/input -v /data/xnat/results:/output iqaxnat_scan
 
 ### References
 [1] Erteza A. Sharpness index and its application to focus control. Appl Opt. 1976 Apr 1;15(4):877-81. doi: 10.1364/AO.15.000877. PMID: 20165091.
+
 [2] Coupé P, Manjón JV, Gedamu E, Arnold D, Robles M, Collins DL. An object-based method for Rician noise estimation in MR images. Med Image Comput Comput Assist Interv. 2009;12(Pt 2):601-8. doi: 10.1007/978-3-642-04271-3_73. PMID: 20426161.
+
 [3] McLaughlin PW, Narayana V, Kessler M, McShan D, Troyer S, Marsh L, Hixson G, Roberson PL. The use of mutual information in registration of CT and MRI datasets post permanent implant. Brachytherapy. 2004;3(2):61-70. doi: 10.1016/j.brachy.2004.06.001. PMID: 15374537. 
 
 
