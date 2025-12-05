@@ -7,11 +7,13 @@ It supports **scan-level** and **subject-level** analysis using the following me
 - Sharpness Index (SI) which refers to an image’s overall clarity and detail with higher values indicating sharper images.
 - Mutual Information (MI) index calculates the mutual dependency in the images with higher index corresponding to higher similarity between two consecutive acquisitions.This tool is more dedicated to the sequential acquisition data such as the DCE images.
 - Rician Noise Level estimation: is based on the Mean Absolute Deviation to estimate the Rician noise in MRI.
-| Metric Name          | Description                          |
-|---------------------|--------------------------------------|
-| snrsi               | **Signal-to-Noise Ratio** is used to characterise image quality with higher values indicating better image quality and **Sharpness Index (SI)** which refers to an image’s overall clarity and detail with higher values indicating sharper images.|
-| mi                  | **Mutual Information (MI)** index calculates the mutual dependency in the images with higher index corresponding to higher similarity between two consecutive acquisitions.This tool is more dedicated to the sequential acquisition data such as the DCE images.                  |
-| riciannoiselevel    | **Rician Noise Level estimation**is based on the Mean Absolute Deviation to estimate the Rician noise in MRI.                   |
+  
+| Metric Name       | Description |
+|------------------|-------------|
+| snrsi             | **Signal-to-Noise Ratio**: characterizes image quality (higher = better)<br>**Sharpness Index (SI)**: measures clarity/detail (higher = sharper) |
+| mi                | **Mutual Information (MI)**: measures dependency between images (higher = more similar)<br>Dedicated for sequential acquisition data such as DCE images |
+| riciannoiselevel  | **Rician Noise Level**: estimation based on the Mean Absolute Deviation to measure Rician noise in MRI |
+               |
 
 Output: The tool generates both Excel files and PNG histogram plots for each metric:
 1. Excel Files (.xlsx): Contains the mean, median and stds for each metric and scan/subject.
