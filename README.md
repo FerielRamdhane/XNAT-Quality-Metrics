@@ -19,9 +19,10 @@ Output: The tool generates both Excel files and PNG histogram plots for each met
 2. PNG Files (.png) Histogram plots corresponding to each metric.
 
 ## User Manual
-
+### Requirements
+The Quality Metric Tool is Docker-based and can run on any system that supports Docker (Linux, macOS, Windows). 
+The Quality Metric Tool is **Docker-based** and can run on **any system that supports Docker** (Linux, macOS, Windows). No additional software is needed beyond Docker (Install from [Docker Official Site](https://www.docker.com/get-started))
 ### Using the Docker image
-
 To build and run the container from the root of this repository
 1. Pull the appropriate Docker image:
 ```bash
@@ -60,21 +61,13 @@ docker run -v /data/xnat/scans:/input -v /data/xnat/results:/output iqaxnat_scan
 ```
 docker run -v /data/xnat/scans:/input -v /data/xnat/results:/output iqaxnat_scan:latest snrsi mi riciannoiselevel
  ```
-### Requirements
-The Quality Metric Tool is Docker-based and can run on any system that supports Docker (Linux, macOS, Windows). 
-The Quality Metric Tool is **Docker-based** and can run on **any system that supports Docker** (Linux, macOS, Windows). No additional software is needed beyond Docker (Install from [Docker Official Site](https://www.docker.com/get-started))
 
 ### References
-[1] F. Romdhane, D. Villano, P. Irrera, L. Consolino, D. L. Longo, "Improving contrast quantification of MRI-CEST images by applying a denoising approach based on a new combination between non-local means filter and anisotropic diffusion tensor," in the 14th European Molecular Imaging Meeting (EMIM), Glasgow, UK, March 2019.
+[1] Erteza A. Sharpness index and its application to focus control. Appl Opt. 1976 Apr 1;15(4):877-81. doi: 10.1364/AO.15.000877. PMID: 20165091.
+[2] Coupé P, Manjón JV, Gedamu E, Arnold D, Robles M, Collins DL. An object-based method for Rician noise estimation in MR images. Med Image Comput Comput Assist Interv. 2009;12(Pt 2):601-8. doi: 10.1007/978-3-642-04271-3_73. PMID: 20426161.
+[3] McLaughlin PW, Narayana V, Kessler M, McShan D, Troyer S, Marsh L, Hixson G, Roberson PL. The use of mutual information in registration of CT and MRI datasets post permanent implant. Brachytherapy. 2004;3(2):61-70. doi: 10.1016/j.brachy.2004.06.001. PMID: 15374537. 
 
-[2] K. Dabov, A. Foi, V. Katkovnik, and K. Egiazarian, "Image denoising by sparse 3D transform-domain collaborative filtering," IEEE Trans. Image Process., vol. 16, no. 8, August 2007.
 
-[3] DL.Longo, W. Dastru W, G. Digilio, J. Keupp, S. Langereis, S. Lanzardo, S. Prestigio, O. Steinbach, E.Terreno, F. Uggeri, S. Aime, "Iopamidol as a responsive MRI-chemical exchange saturation transfer contrast agent for pH mapping of kidneys: In vivo studies in mice at 7 T," Magn Reson Med 2011;65(1):202-211.s
 
-Citation
-Cite the code: DOI
-
-Cite the paper: https://doi.org/10.1002/mrm.28676
-
-Who do I talk to?
-If you have any comment, suggestion, or question, please do contact Feriel Romdhane at ferielromdhane@yahoo.fr
+### Who do I talk to?
+If you have any comment, suggestion, or question, please do contact preclinicaldata@eurobioimaging.eu
