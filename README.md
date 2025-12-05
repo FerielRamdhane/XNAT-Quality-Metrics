@@ -66,7 +66,7 @@ docker run -v /data/xnat/scans:/input -v /data/xnat/results:/output iqaxnat_scan
 The Quality Metric Tool is designed to run seamlessly inside an XNAT environment through the **XNAT Container Service**.  
 Below are the steps required to deploy and run the tool within your XNAT instance.
 Log into your XNAT server (or the machine hosting XNAT Container Service) and pull the correct image.
-👉 Check this [**Getting started**] (https://wiki.xnat.org/container-service/getting-started) for more details  
+👉 Check this [Getting started](https://wiki.xnat.org/container-service/getting-started) for more details  
 
 ### Running the Tool in XNAT
 For detailed instructions on how to run Docker-based tools inside XNAT (using already pulled images), please refer to the following guide:
