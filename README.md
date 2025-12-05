@@ -13,7 +13,6 @@ It supports **scan-level** and **subject-level** analysis using the following me
 | snrsi             | **Signal-to-Noise Ratio**: characterizes image quality (higher = better)<br>**Sharpness Index (SI)**: measures clarity/detail (higher = sharper) |
 | mi                | **Mutual Information (MI)**: measures dependency between images (higher = more similar)<br>Dedicated for sequential acquisition data such as DCE images |
 | riciannoiselevel  | **Rician Noise Level**: estimation based on the Mean Absolute Deviation to measure Rician noise in MRI |
-               |
 
 Output: The tool generates both Excel files and PNG histogram plots for each metric:
 1. Excel Files (.xlsx): Contains the mean, median and stds for each metric and scan/subject.
