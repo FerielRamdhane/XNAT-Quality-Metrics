@@ -7,7 +7,11 @@ It supports **scan-level** and **subject-level** analysis using the following me
 - Sharpness Index (SI) which refers to an image’s overall clarity and detail with higher values indicating sharper images.
 - Mutual Information (MI) index calculates the mutual dependency in the images with higher index corresponding to higher similarity between two consecutive acquisitions.This tool is more dedicated to the sequential acquisition data such as the DCE images.
 - Rician Noise Level estimation: is based on the Mean Absolute Deviation to estimate the Rician noise in MRI.
-
+| Metric Name          | Description                          |
+|---------------------|--------------------------------------|
+| snrsi               | **Signal-to-Noise Ratio** is used to characterise image quality with higher values indicating better image quality and **Sharpness Index (SI)** which refers to an image’s overall clarity and detail with higher values indicating sharper images.|
+| mi                  | **Mutual Information (MI)** index calculates the mutual dependency in the images with higher index corresponding to higher similarity between two consecutive acquisitions.This tool is more dedicated to the sequential acquisition data such as the DCE images.                  |
+| riciannoiselevel    | **Rician Noise Level estimation**is based on the Mean Absolute Deviation to estimate the Rician noise in MRI.                   |
 
 Output: The tool generates both Excel files and PNG histogram plots for each metric:
 1. Excel Files (.xlsx): Contains the mean, median and stds for each metric and scan/subject.
@@ -30,14 +34,24 @@ docker pull iqaxnat_subject:latest
 
 ```
 2. Verify the Docker image:
-```docker images ```
-
-2. Running Locally
+```
+docker images
+```
+3. Running Locally
 * Ensure Docker is installed on your local machine.
 * Pull the appropriate Docker image as above.
 * Prepare input and output directories on your local system.
-  
-4. Run with input and output volumes mounted
-```
+* Command Format
+  ```
+  docker run -v path_of_input:/input -v path_of_output:/output [IMAGE_NAME] [METRIC_NAME]
+  ```
+| Parameter      | Description                                                      |
+| -------------- | ---------------------------------------------------------------- |
+| path_of_input  | Directory containing scan/subject data |
+| path_of_output | Directory to store analysis results                              |
+| IMAGE_NAME     | Docker image (`iqaxnat_scan:latest` or `iqaxnat_subject:latest`) |
+| METRIC_NAME    | IQA metric(s), space-separated for multiple metrics              |
+
+
 
 
